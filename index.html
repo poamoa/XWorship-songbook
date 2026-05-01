@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Songbook</title>
+    <script src="https://unpkg.com"></script>
+    <style>
+        :root { 
+            --primary: #d32f2f; 
+            --chord-size: 1.1em; 
+            --lyric-size: 1.25em; 
+        }
+        body { font-family: -apple-system, sans-serif; background: #f0f0f0; margin: 0; }
+        
+        /* Header Fixiert */
+        header { 
+            position: sticky; top: 0; background: #222; color: white; padding: 10px;
+            display: flex; flex-wrap: wrap; gap: 15px; align-items: center; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .nav-group { display: flex; align-items: center; gap: 8px; border-right: 1px solid #444; padding-right: 10px; }
+        select { padding: 8px; border-radius: 5px; background: #444; color: white; border: none; font-size: 1em; }
+        
+        button { 
+            padding: 8px 12px; background: #444; color: white; border: 1px solid #666; 
+            border-radius: 4px; cursor: pointer; font-weight: bold; min-width: 40px;
+        }
+        button:active { background: var(--primary); }
+        .active-val { min-width: 30px; text-align: center; font-weight: bold; }
+
+        /* Das Song-Display */
+        #song-display { 
+            background: white; max-width: 950px; margin: 15px auto; padding: 40px; 
+            border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 90vh;
+        }
+
+        /* Dynamische Größensteuerung durch CSS Variablen */
+        .chord { 
+            color: var(--primary); font-weight: bold; font-family: 'Courier New', monospace; 
+            font-size: var(--chord-size); height: 1.4em; 
+        }
+        .lyrics { 
+            font-size: var(--lyric-size); line-height: 1.4; white-space: pre; color: #111;
+        }
+        
+        .row { display: flex; flex-wrap: wrap; margin-bottom: 8px; }
+        .column { display: flex; flex-direction: column; margin-right: 3px; }
+        .paragraph { margin-bottom: 30px; }
+        
+        h1 { margin-top: 0; border-bottom: 3px solid var(--primary); padding-bottom: 10px; font-size: 1.8em; }
+
+        @media (max-width: 600px) {
+            #song-display { padding: 20px; margin: 0; }
+            header { gap: 10px; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Song Auswahl -->
+    <div class="nav-group">
+        <select id="song-select" onchange="fetchAndLoadSong()">
+            <option value="">-- Song wählen --</option>
+            <option value="song1.txt">01 - Hotel California</option>
+            <option value="song2.txt">02 - Let It Be</option>
+            <option value="song3.txt">03 - Neuer Song</option>
+        </select>
+    </div>
+
+    <!-- Transponieren -->
+    <div class="nav-group">
+        <button onclick="transpose(-1)">♭</button>
+        <span class="active-val" id="key-info">0</span>
+        <button onclick="transpose(1)">♯</button>
+    </div>
+
+    <!-- Schriftgröße -->
+    <div class="nav-group" style="border:none">
+        <span style="font-size: 0.8em; margin-right:5px">Text:</span>
+        <button onclick="changeFontSize(-0.1)">A-</button>
+        <button onclick="changeFontSize(0.1)">A+</button>
+    </div>
+</header>
+
+<div id="song-display">
+    <div id="song-content">Wähle einen Song aus der Liste oben.</div>
+</div>
+
+<script>
+    let currentSongObj = null;
+    let currentTranspose = 0;
+    let fontSizeLevel = 1.25; // Standardstartwert für Lyrics in 'em'
+
+    async function fetchAndLoadSong() {
+        const fileName = document.getElementById('song-select').value;
+        if (!fileName) return;
+
+        try {
+            const response = await fetch('songs/' + fileName);
+            if (!response.ok) throw new Error('Datei nicht gefunden');
+            const text = await response.text();
+            
+            const parser = new chordsheetjs.ChordProParser();
+            currentSongObj = parser.parse(text);
+            currentTranspose = 0;
+            render();
+        } catch (err) {
+            document.getElementById('song-content').innerHTML = `
+                <div style="color:red; padding:20px; border:1px solid red">
+                    <b>Fehler beim Laden:</b><br>
+                    Stelle sicher, dass die Datei im Ordner 'songs/' liegt.<br>
+                    <i>Hinweis: Lokal im Browser funktioniert 'fetch' nur über einen (Python) Webserver!</i>
+                </div>`;
+        }
+    }
+
+    function transpose(steps) {
+        if (!currentSongObj) return;
+        currentTranspose += steps;
+        render();
+    }
+
+    function changeFontSize(delta) {
+        fontSizeLevel += delta;
+        // Wir ändern die CSS-Variable im Root-Element
+        document.documentElement.style.setProperty('--lyric-size', fontSizeLevel + 'em');
+        // Akkorde skalieren wir leicht mit (Verhältnis 0.8 zu Lyrics)
+        document.documentElement.style.setProperty('--chord-size', (fontSizeLevel * 0.85) + 'em');
+    }
+
+    function render() {
+        const transposed = currentSongObj.transpose(currentTranspose);
+        const formatter = new chordsheetjs.HtmlTableFormatter();
+        
+        let headerHtml = `<h1>${transposed.title || 'Unbenannt'} <small style="font-size:0.5em; opacity:0.6">${transposed.artist || ''}</small></h1>`;
+        document.getElementById('song-content').innerHTML = headerHtml + formatter.format(transposed);
+        
+        document.getElementById('key-info').innerText = currentTranspose > 0 ? "+" + currentTranspose : currentTranspose;
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
