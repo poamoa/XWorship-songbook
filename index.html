@@ -100,7 +100,7 @@
         if (!fileName) return;
 
         try {
-            const response = await fetch('./songs/' + fileName);
+            const response = await fetch('https://github.com/poamoa/XWorship-songbook/blob/main/songs/Ewig_treuer_Freund.txt');
             if (!response.ok) throw new Error('Datei nicht gefunden');
             const text = await response.text();
             
