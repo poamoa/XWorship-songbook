@@ -3,99 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XWorship Songbook</title>
+    <title>Test Songbook</title>
+    <!-- Wir laden die Bibliothek -->
     <script src="https://unpkg.com"></script>
     <style>
-        :root { --primary: #d32f2f; --chord-size: 1.1em; --lyric-size: 1.25em; }
-        body { font-family: -apple-system, sans-serif; background: #f0f0f0; margin: 0; }
-        header { 
-            position: sticky; top: 0; background: #222; color: white; padding: 10px;
-            display: flex; flex-wrap: wrap; gap: 15px; align-items: center; z-index: 1000;
-        }
-        select { padding: 8px; border-radius: 5px; background: #444; color: white; border: none; font-size: 1em; flex-grow: 1; }
-        button { padding: 8px 12px; background: #444; color: white; border: 1px solid #666; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        #song-display { background: white; max-width: 900px; margin: 15px auto; padding: 30px; border-radius: 4px; min-height: 90vh; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .chord { color: var(--primary); font-weight: bold; font-family: monospace; font-size: var(--chord-size); height: 1.4em; }
-        .lyrics { font-size: var(--lyric-size); line-height: 1.4; white-space: pre; color: #111; }
-        .row { display: flex; flex-wrap: wrap; margin-bottom: 8px; }
-        .column { display: flex; flex-direction: column; margin-right: 3px; }
-        .paragraph { margin-bottom: 30px; }
-        h1 { margin-top: 0; border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+        body { font-family: sans-serif; padding: 20px; background: #eee; }
+        #output { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .chord { color: red; font-weight: bold; font-family: monospace; }
+        .row { display: flex; flex-wrap: wrap; margin-bottom: 5px; }
+        .column { display: flex; flex-direction: column; margin-right: 4px; }
     </style>
 </head>
 <body>
 
-<header>
-    <select id="song-select" onchange="loadSelectedSong()">
+    <h1>ChordSheetJS Test</h1>
+    
+    <select id="song-select" onchange="testRun()">
         <option value="">-- Song wählen --</option>
-        <option value="song1">Hotel California</option>
-        <option value="song2">Let It Be</option>
-        <option value="song3">Stand By Me</option>
+        <option value="test">Hotel California (Test)</option>
     </select>
-    <div style="display:flex; gap:10px">
-        <button onclick="transpose(-1)">♭</button>
-        <span id="key-info" style="min-width:20px; text-align:center; padding-top:8px">0</span>
-        <button onclick="transpose(1)">♯</button>
-        <button onclick="changeFontSize(0.1)">A+</button>
-    </div>
-</header>
 
-<div id="song-display">
-    <div id="song-content">Wähle einen Song aus.</div>
-</div>
+    <div id="output">Hier erscheint der Song...</div>
 
 <script>
-    // --- HIER DEINE SONGS EINTRAGEN ---
-    // Nutze Backticks ( ` ) am Anfang und Ende für mehrzeiligen Text
-    const songs = {
-        "song1": `{title: Hotel California}
-{artist: Eagles}
-[Bm] On a dark desert highway, [F#] cool wind in my hair
-[A] Warm smell of colitas, [E] rising up through the air`,
+    function testRun() {
+        const select = document.getElementById('song-select');
+        const output = document.getElementById('output');
 
-        "song2": `{title: Let It Be}
-{artist: The Beatles}
-When I [C]find myself in [G]times of trouble, [Am]Mother Mary [F]comes to me`,
+        if (select.value === "test") {
+            // Der Songtext im Inline-Format
+            const songText = "{title: Hotel California}\n[Bm] On a dark desert [F#] highway";
 
-        "song3": `{title: Stand By Me}
-{artist: Ben E. King}
-When the [A]night has come [F#m] and the land is dark`
-    };
-    // ----------------------------------
+            try {
+                // 1. Parser erstellen
+                const parser = new chordsheetjs.ChordProParser();
+                // 2. Text parsen
+                const song = parser.parse(songText);
+                // 3. HTML erzeugen
+                const formatter = new chordsheetjs.HtmlTableFormatter();
+                const html = formatter.format(song);
 
-    let currentSongObj = null;
-    let currentTranspose = 0;
-    let fontSizeLevel = 1.25;
-
-    function loadSelectedSong() {
-        const songKey = document.getElementById('song-select').value;
-        if (!songKey || !songs[songKey]) return;
-
-        const parser = new chordsheetjs.ChordProParser();
-        currentSongObj = parser.parse(songs[songKey]);
-        currentTranspose = 0;
-        render();
-    }
-
-    function transpose(steps) {
-        if (!currentSongObj) return;
-        currentTranspose += steps;
-        render();
-    }
-
-    function changeFontSize(delta) {
-        fontSizeLevel += delta;
-        document.documentElement.style.setProperty('--lyric-size', fontSizeLevel + 'em');
-        document.documentElement.style.setProperty('--chord-size', (fontSizeLevel * 0.85) + 'em');
-    }
-
-    function render() {
-        const transposed = currentSongObj.transpose(currentTranspose);
-        const formatter = new chordsheetjs.HtmlTableFormatter();
-        let headerHtml = `<h1>${transposed.title || 'Song'}</h1>`;
-        document.getElementById('song-content').innerHTML = headerHtml + formatter.format(transposed);
-        document.getElementById('key-info').innerText = currentTranspose;
-        window.scrollTo(0, 0);
+                // 4. Anzeigen
+                output.innerHTML = html;
+            } catch (e) {
+                output.innerHTML = "Fehler: " + e.message;
+            }
+        }
     }
 </script>
 
