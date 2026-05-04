@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Songbook</title>
-    <!-- Wir laden die Bibliothek -->
-    <script src="https://unpkg.com"></script>
-    <style>
-        body { font-family: sans-serif; padding: 20px; background: #eee; }
-        #output { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .chord { color: red; font-weight: bold; font-family: monospace; }
-        .row { display: flex; flex-wrap: wrap; margin-bottom: 5px; }
-        .column { display: flex; flex-direction: column; margin-right: 4px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Songbook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+    }
+
+    #menu {
+      width: 250px;
+      background: #222;
+      color: white;
+      padding: 10px;
+      overflow-y: auto;
+    }
+
+    #menu h2 {
+      font-size: 18px;
+    }
+
+    .song {
+      cursor: pointer;
+      padding: 8px;
+      border-bottom: 1px solid #444;
+    }
+
+    .song:hover {
+      background: #444;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #controls {
+      background: #eee;
+      padding: 10px;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+    }
+
+    button {
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>ChordSheetJS Test</h1>
-    
-    <select id="song-select" onchange="testRun()">
-        <option value="">-- Song wählen --</option>
-        <option value="test">Hotel California (Test)</option>
-    </select>
+<div id="menu">
+  <h2>🎵 Songs</h2>
 
-    <div id="output">Hier erscheint der Song...</div>
+  <div class="song" onclick="loadSong('01_Ewig_treuer_Freund.html')">01. Ewig treuer Freund</div>
+  <div class="song" onclick="loadSong('02_Gott_Allmächtig.html')">02. Gott Allmächtig</div>
+  <div class="song" onclick="loadSong('03_Für_mein_Gott_reicht.html')">03. Für mein Gott reicht</div>
+  <div class="song" onclick="loadSong('04_Klang_der_Erlösten.html')">04. Klang der Erlösten</div>
+  <div class="song" onclick="loadSong('05_König_Jesus.html')">05. König Jesus</div>
+  <div class="song" onclick="loadSong('06_Majestät.html')">06. Majestät</div>
+  <div class="song" onclick="loadSong('07_Mehr_von_dir.html')">07. Mehr von dir</div>
+  <div class="song" onclick="loadSong('08_Preis_den_Herrn.html')">08. Preis den Herrn</div>
+  <div class="song" onclick="loadSong('09_Freude_am_Herrn.html')">09. Freude am Herrn</div>
+  <div class="song" onclick="loadSong('10_Shekina.html')">10. Shekina</div>
+  <div class="song" onclick="loadSong('11_Treuer_Diener.html')">11. Treuer Diener</div>
+  <div class="song" onclick="loadSong('12_Weg_Wahrheit_Leben.html')">12. Weg Wahrheit Leben</div>
+</div>
+
+<div id="content">
+  <div id="controls">
+    <button onclick="transpose(-1)">- Halbton</button>
+    <button onclick="transpose(1)">+ Halbton</button>
+  </div>
+
+  <iframe id="viewer" src="song1.html"></iframe>
+</div>
 
 <script>
-    function testRun() {
-        const select = document.getElementById('song-select');
-        const output = document.getElementById('output');
+let currentTranspose = 0;
 
-        if (select.value === "test") {
-            // Der Songtext im Inline-Format
-            const songText = "{title: Hotel California}\n[Bm] On a dark desert [F#] highway";
+const chords = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
-            try {
-                // 1. Parser erstellen
-                const parser = new chordsheetjs.ChordProParser();
-                // 2. Text parsen
-                const song = parser.parse(songText);
-                // 3. HTML erzeugen
-                const formatter = new chordsheetjs.HtmlTableFormatter();
-                const html = formatter.format(song);
+function loadSong(file) {
+  document.getElementById('viewer').src = file;
+  currentTranspose = 0;
+}
 
-                // 4. Anzeigen
-                output.innerHTML = html;
-            } catch (e) {
-                output.innerHTML = "Fehler: " + e.message;
-            }
-        }
-    }
+function transpose(step) {
+  const iframe = document.getElementById('viewer');
+  const doc = iframe.contentDocument || iframe.contentWindow.document;
+
+  if (!doc) return;
+
+  const elements = doc.querySelectorAll('*');
+
+  elements.forEach(el => {
+    el.innerHTML = el.innerHTML.replace(/\b([A-G](#|b)?)(m|maj|min|7|sus|dim|aug)?\b/g, (match) => {
+      return transposeChord(match, step);
+    });
+  });
+
+  currentTranspose += step;
+}
+
+function transposeChord(chord, step) {
+  const regex = /^([A-G])(#|b)?(.*)$/;
+  const match = chord.match(regex);
+
+  if (!match) return chord;
+
+  let [, root, accidental, rest] = match;
+
+  let note = root + (accidental || '');
+
+  let index = chords.indexOf(note);
+  if (index === -1) return chord;
+
+  let newIndex = (index + step + chords.length) % chords.length;
+  return chords[newIndex] + rest;
+}
 </script>
 
 </body>
