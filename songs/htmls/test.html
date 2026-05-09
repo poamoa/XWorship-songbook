@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewig treuer Freund - XWorship</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --chord-color: #2563eb;
+            --label-color: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .song-container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--label-color);
+            font-weight: 300;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 4px solid #cbd5e1;
+            background: #fafafa;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .section.chorus { border-left-color: var(--primary-color); background: #eff6ff; }
+        .section.bridge { border-left-color: #8b5cf6; background: #f5f3ff; }
+
+        .label {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            color: var(--label-color);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .line {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .word-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 12px;
+            min-height: 3rem;
+        }
+
+        .chord {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-weight: bold;
+            color: var(--chord-color);
+            font-size: 1.1rem;
+            height: 1.4rem;
+        }
+
+        .lyric {
+            font-size: 1.1rem;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .song-container { box-shadow: none; border: none; width: 100%; }
+            .section { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="song-container">
+    <header>
+        <h1>Ewig treuer Freund</h1>
+        <div class="subtitle">XWorship</div>
+    </header>
+
+    <div class="section">
+        <span class="label">Verse 1</span>
+        <div class="line">
+            <div class="word-group"><span class="chord">2</span><span class="lyric">Du bist</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">immer</span></div>
+            <div class="word-group"><span class="chord">5/7</span><span class="lyric">treu und</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">1</span><span class="lyric">Du bist</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">immer</span></div>
+            <div class="word-group"><span class="chord">4</span><span class="lyric">gut</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord"></span><span class="lyric">Und ich</span></div>
+            <div class="word-group"><span class="chord">2</span><span class="lyric">weiß ge-</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">nau, Du</span></div>
+            <div class="word-group"><span class="chord">5/7</span><span class="lyric">bleibst</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">1</span><span class="lyric">Friede-</span></div>
+            <div class="word-group"><span class="chord">1/3</span><span class="lyric">fürst für</span></div>
+            <div class="word-group"><span class="chord">4</span><span class="lyric">alle Zeit</span></div>
+        </div>
+    </div>
+
+    <div class="section chorus">
+        <span class="label">Chorus</span>
+        <div class="line">
+            <div class="word-group"><span class="chord">4</span><span class="lyric">Alles, was</span></div>
+            <div class="word-group"><span class="chord">1/3</span><span class="lyric">gut und voll-</span></div>
+            <div class="word-group"><span class="chord">5sus4</span><span class="lyric">kommen ist,</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">4</span><span class="lyric">fließt von dei-</span></div>
+            <div class="word-group"><span class="chord">6</span><span class="lyric">nem Thron her</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">ewiglich</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">4</span><span class="lyric">Deine Lie-</span></div>
+            <div class="word-group"><span class="chord">6</span><span class="lyric">be über-</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">wältigt mich</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">4</span><span class="lyric">Du bist</span></div>
+            <div class="word-group"><span class="chord">6</span><span class="lyric">treu, für</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">immer treu</span></div>
+        </div>
+    </div>
+
+    <div class="section bridge">
+        <span class="label">Bridge</span>
+        <div class="line">
+            <div class="word-group"><span class="chord">6</span><span class="lyric">Gefunden, errettet,</span></div>
+            <div class="word-group"><span class="chord">4</span><span class="lyric">erlöst von den Ketten</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord">1</span><span class="lyric">Der Feind ist zertreten,</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">ich bin dein</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
