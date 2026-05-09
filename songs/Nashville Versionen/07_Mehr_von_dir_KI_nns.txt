@@ -1,0 +1,36 @@
+{title: Mehr von dir KI}
+{key: 5}
+{tempo: 71}
+{time: 4/4}
+
+[1]
+[5][6][5]
+[4]Gott, nimm alles, was ich [1] hab, alles, was ich [5] bin
+Meine Krone [6] lege ich vor deinen [1] Füßen [4] hin
+Liebevoll schaust du es [1] an, mein Herz, das du dir [5] wimmst
+Ich komme, wie ich [6] bin und du machst mich zu [1] deinem [4] Kind
+Immer weniger von dir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr von [5] dir
+Immer weniger von [4] mir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr von [5] dir
+Immer weniger von [4] dir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr von [5] dir
+Immer weniger von [4] mir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr [5] von dir
+Gott nimm alles was ich [1] hab,[1]alles was ich [5] bin [5][5]
+Meine Krone [1] lege ich vor deinen Füßen [4] hin [4]
+Liebevoll schaust du [1] es an, mein [1] Herz,[1] das [1] du dir [5] wünschst [5][5]
+Ich komme wie ich [6] bin und du machst mich zu [1] deinem [4] Kind
+Gott nimm alles was ich [1] hab, nimm alles was ich [5] bin [5]
+Meine Krone [6] lege ich vor deinen [5] Füßen [4] hin
+Liebevoll schaust du es [1] an, mein Herz, das du dir [5] wünschst [5]
+Ich komme wie ich [6] bin und du machst mich zu [5] deinem [4] Kind
+Immer weniger von mir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr von [5] dir
+Immer weniger von [4] mir und mehr [5] von [6] dir
+Mehr von [1] dir, mehr [5] von dir
+[4][5]
+[6][1]
+[5][4][5]
+[6][1]
+[5]

@@ -1,0 +1,44 @@
+{title: Treuer Diener}
+{key: 5}
+{tempo: 68}
+{time: 4/4}
+
+[1]
+[6]
+[4][1]
+[6]
+[4][1]
+Du rufst mich bei  meinem [6] Namen Aus  meiner [4] Schwachheit in  deine [1] Gnade
+Ja, bei dir darf  ich [6]  lernen [6] Weil ich  zu [4] leben, wie du  zu [1] leben
+[4]Ich habe nur dieses eine  Ziel [6] Vor dir zu stehen und nur eins zu hören
+[1]Gut gemacht, mein  treuer [3] Diener, oh Herr
+Hier  bin [4] ich,  sende [6] mich Solang  ich [1] atme, werd ich singen
+Ich geb  mich [5] deiner Herrschaft hin Egal  was [4] kommt und  egal [6] wohin
+Bis an  die [1] Enden dieser Welt Bis  jeder [5] deinen Namen kennt
+[4][6]
+[1][5]
+[1]Du rufst mich zu  frischem [6] Wasser Auf  grüne [4] Auen, erquickst  meine [1] Seele
+[5]Und wenn ich durchs finstere  Tal [6] geh Fürchte ich  kein [4] Unglück, denn du bist  bei [1] mir
+[4]Ich habe nur dieses eine  Ziel [6] Vor dir zu stehen und nur eins zu hören
+[1]Gut gemacht, mein treuer Diener,[3] oh Herr
+Hier  bin [4] ich,  sende [6] mich Solang  ich [1] atme, werd ich singen
+Ich geb  mich [5] deiner Herrschaft hin Egal  was [4] kommt und  egal [6] wohin
+Bis an  die [1] Enden dieser Welt Bis  jeder [5] deinen  Namen [4] kennt
+[6]
+[1][3]
+[4][6][6]
+[1][3][1]
+Ich  habe [4] nur dieses eine  Ziel [6] Vor dir zu stehen und nur eins zu hören
+[1]Gut gemacht, mein  treuer [3] Diener Danke, Herr, für deine Liebe
+[4]Ich  habe [4] nur dieses eine  Ziel [6] Vor dir zu stehen und nur eins zu hören
+[1]Gut gemacht, mein  treuer [3] Diener Danke, Herr, für deine Liebe
+[4]Ich habe nur dieses eine  Ziel [6] Vor dir zu stehen und nur eins zu hören
+[1]Gut gemacht, mein  treuer [5] Diener, oh Herr
+[4][6]
+[1][5]
+Hier  bin [4] ich,  sende [6] mich Solang  ich [1] atme, werd ich singen
+Ich geb  mich [5] deiner Herrschaft hin Egal  was [4] kommt und  egal [6] wohin
+Bis an  die [1] Enden dieser Welt Bis  jeder [5] deinen Namen kennt
+[1]
+[6][4]
+[1]

@@ -1,0 +1,43 @@
+{title: König Jesus}
+{key: 6}
+{tempo: 109}
+{time: 4/4}
+
+[1]
+[4][6][4]
+[1]
+[5][1]
+[4]Als [1] deine Kinder zum Frühstück kamen
+sind [4] wir vor dir gleich [1] Priester und Diener.
+[4]Durch dich sind wir eins.[6]
+Wir [4] singen dir ein neues [1] Lied.[4]
+[1]Wo du regierst, da entsteht [4] Harmonie.
+[1]
+Als deine Kirche in [4] Einheit vor dir, oh [1] Gott.[6]
+Wir [4] singen dir ein neues [1] Lied.
+Aus allen [6] Stimmen und Völkern hast [4] du uns freigekauft.
+[1]
+[5]Alle [6] Nationen dich loben, für [4] immer singen wir [5] laut.
+[6]
+Jesus allein ist [1] würdig,[5] für [6]immer [4] unvergleichlich.[1]
+All [5] Ehre [6][4]und [1] Anbetung, all Weisheit und [5] Macht, König Jesus.
+[6]
+All Stärke [4] und all Reichtum,[1]dem Lamm auf den [5] Thron.
+[6]
+Jesus [4] allein ist [1] würdig,[5] für [6]immer [4] unvergleichlich.
+[1]
+[5][4][1]
+[6]
+[4][1]
+[5]Amen, Amen, Amen, Amen, Amen, Amen [6][4][1][5][6]
+[4]Amen, Amen, Amen, Amen, Amen [1][5]
+[1]
+Jesus allein [4] ist [1] würdig
+[4][6]
+Für immer [1] unvergleichlich
+[5][6]
+[4][1]
+[5][6]
+[4][1]
+[5][6]
+Für immer unvergleichlich

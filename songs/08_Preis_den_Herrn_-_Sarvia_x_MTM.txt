@@ -1,45 +1,47 @@
-Preis den Herrn - Sarvia x MTM
-Key: D | Tempo: 69 | Time: 4/4
+{title: Preis den Herrn - Sarvia x MTM}
+{key: D}
+{tempo: 69}
+{time: 4/4}
 
 [D]
 [Dsus2]
-Music[G][D]
-Preist den Herrn, denn[Hm] seine Güte[Asus4] währt in Ewigkeit[G] Preist den[D] Herrn, wenn er[Hm] für mich ist, wer[A] kann gegen mich sein
-[G][Hm]
-Ich lege meine Waffen[D] nieder und sing nur[A] noch[G] Siegeslieder[D]
-Preist den Herrn,[Hm] ich preist den[A] Herrn und fürchte mich[D] nicht[G]
-Denn mein[D] Gott spricht, ich hab den[Hm] Sieg für den[G] Kampf der Freude
-[D]Und wer an dich glaubt, auf[G] dich[D] vertraut
-Ja, der steht[Hm] fest auf[G] dir, Jesus, dem[D] Fels
-Und ich singe, weil[Em] mein[Hm] Halleluja
-bringt[D] Verwirrung ins Lager des[A] Feindes,[Em] oh[Hm]
-Halleluja, durch die[D] Kraft deines heiligen[A] Geistes,[Em] oh[Hm]
-Halleluja, du gehst[D] mit deinem Volk und[A] befreist es,[Em] oh[Hm] Halleluja, und ich[D] tanze, weil dein Sieg[A] auch mein ist
+Music [G][D]
+Preist den Herrn, denn [Bm] seine Güte [Asus4] währt in Ewigkeit [G] Preist den [D] Herrn, wenn er [Bm] für mich ist, wer [A] kann gegen mich sein
+[G][Bm]
+Ich lege meine Waffen [D] nieder und sing nur [A] noch [G] Siegeslieder [D]
+Preist den Herrn,[Bm] ich preist den [A] Herrn und fürchte mich [D] nicht [G]
+Denn mein [D] Gott spricht, ich hab den [Bm] Sieg für den [G] Kampf der Freude
+[D]Und wer an dich glaubt, auf [G] dich [D] vertraut
+Ja, der steht [Bm] fest auf [G] dir, Jesus, dem [D] Fels
+Und ich singe, weil [Em] mein [Bm] Halleluja
+bringt [D] Verwirrung ins Lager des [A] Feindes,[Em] oh [Bm]
+Halleluja, durch die [D] Kraft deines heiligen [A] Geistes,[Em] oh [Bm]
+Halleluja, du gehst [D] mit deinem Volk und [A] befreist es,[Em] oh [Bm] Halleluja, und ich [D] tanze, weil dein Sieg [A] auch mein ist
 [G][Dsus2][D]
-Preist den Herrn, denn[Hm] seine Güte[A] währt in[G] Ewigkeit[Dsus2][D]
-Preist den Herrn, wenn er[Hm] für mich ist, wer[A] kann gegen mich[G] sein[Hm]
-Ich lege meine Waffen[D] nieder und sing nur[A] noch[G] Siegeslieder Preist[Dsus2] den[D] Herrn,[Hm] ich preist den[A] Herrn
-Das Tal[Asus4] meines[D] Leides wird zum[G] Tal meines[D] Lobes
-Du[A] bist wie kein[Hm] anderer, du[G] bist hoch[D] erhoben
-Wie[G] könnte ich[D] anders, als mich[G] in dir zu[D] freuen
-Du bist[G] und[Hm] bleibst gut,[G] du bist und[D] bleibst treu
-Und ich singe, weil[Hm] mein Halleluja
-bringt Verwirrung ins Lager des[A] Feindes,[Dsus2] oh[Hsus2][Hm]
-Halleluja, durch die Kraft deines heiligen[A] Geistes,[Dsus2][Hm]oh[F♯sus4][D][Hm]
-Halleluja, du gehst mit deinem Volk und[A] befreist es,[DM7] oh[Dsus2][Hsus2][Hm]
-Halleluja, und ich tanze, weil dein Sieg auch[A] mein ist[G][D]
-Preist den Herrn, denn[Hm] seine Güte[A] währt in[G] Ewigkeit[D]
-Preist den Herrn, wenn er[Hm] für mich ist, wer[A] soll gegen mich[G] sein[Hm]
-Ich lege meine Waffen[D] nieder und sing nur[A] noch[G] Siegeslieder[D]
-Preist den Herrn, oh, wir haben gehört, der Sieg nur ihm[G] allein[D]
-[Hm][A]Nur ihm[G] allein[D]
-[Hm]Wir haben gehört, der Sieg[A] nur ihm allein[G][D]
-[Hm][A]Nur ihm[G] allein[D]
-Wir[Hm] haben gehört, der[A] Sieg nur ihm allein Und ich singe, weil[G] mein Halleluja
-[D]bringt[Hm] Verwirrung ins Lager des[A] Feindes,[G] oh
-[D]Halleluja, durch die[Hm] Kraft deines heiligen[A] Geistes,[GM7] oh
-[Hm]Halleluja, du gehst[D] mit deinem Volk und[A] befreist es, oh
-[GM7][D]Halleluja, und ich[Hm] tanze, weil dein Sieg auch[Asus4] mein ist
-[G]Ich lege[Hm] meine Waffen[D] nieder und sing[A] nur noch[G] Siegeslieder
-Preist den[D] Herrn, oh,[Hm] wem gehört der[A] Sieg nur ihm allein?
+Preist den Herrn, denn [Bm] seine Güte [A] währt in [G] Ewigkeit [Dsus2][D]
+Preist den Herrn, wenn er [Bm] für mich ist, wer [A] kann gegen mich [G] sein [Bm]
+Ich lege meine Waffen [D] nieder und sing nur [A] noch [G] Siegeslieder Preist [Dsus2] den [D] Herrn,[Bm] ich preist den [A] Herrn
+Das Tal [Asus4] meines [D] Leides wird zum [G] Tal meines [D] Lobes
+Du [A] bist wie kein [Bm] anderer, du [G] bist hoch [D] erhoben
+Wie [G] könnte ich [D] anders, als mich [G] in dir zu [D] freuen
+Du bist [G] und [Bm] bleibst gut,[G] du bist und [D] bleibst treu
+Und ich singe, weil [Bm] mein Halleluja
+bringt Verwirrung ins Lager des [A] Feindes,[Dsus2] oh [Bsus2][Bm]
+Halleluja, durch die Kraft deines heiligen [A] Geistes,[Dsus2][Bm]oh [F♯sus4][D][Bm]
+Halleluja, du gehst mit deinem Volk und [A] befreist es,[DM7] oh [Dsus2][Bsus2][Bm]
+Halleluja, und ich tanze, weil dein Sieg auch [A] mein ist [G][D]
+Preist den Herrn, denn [Bm] seine Güte [A] währt in [G] Ewigkeit [D]
+Preist den Herrn, wenn er [Bm] für mich ist, wer [A] soll gegen mich [G] sein [Bm]
+Ich lege meine Waffen [D] nieder und sing nur [A] noch [G] Siegeslieder [D]
+Preist den Herrn, oh, wir haben gehört, der Sieg nur ihm [G] allein [D]
+[Bm][A]Nur ihm [G] allein [D]
+[Bm]Wir haben gehört, der Sieg [A] nur ihm allein [G][D]
+[Bm][A]Nur ihm [G] allein [D]
+Wir [Bm] haben gehört, der [A] Sieg nur ihm allein Und ich singe, weil [G] mein Halleluja
+[D]bringt [Bm] Verwirrung ins Lager des [A] Feindes,[G] oh
+[D]Halleluja, durch die [Bm] Kraft deines heiligen [A] Geistes,[GM7] oh
+[Bm]Halleluja, du gehst [D] mit deinem Volk und [A] befreist es, oh
+[GM7][D]Halleluja, und ich [Bm] tanze, weil dein Sieg auch [Asus4] mein ist
+[G]Ich lege [Bm] meine Waffen [D] nieder und sing [A] nur noch [G] Siegeslieder
+Preist den [D] Herrn, oh,[Bm] wem gehört der [A] Sieg nur ihm allein?
 [G][D]

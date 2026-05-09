@@ -1,38 +1,40 @@
-Ewig treuer Freund
-Key: C#m | Tempo: 130 | Time: 4/4
+{title: Ewig treuer Freund}
+{key: E}
+{tempo: 130}
+{time: 4/4}
 
-[Hsus4/E][F♯m7][E][G♯m7/D♯]
-[C♯m7][G♯m7][AM9][F♯m7][E][H/D♯]
-[C♯m7][G♯m7][AM9]Du[F♯m7] bist[E] immer[H] treu und[E] du bist[G♯m7] immer[AM9] gut
-Und ich[F♯m7] weiß[EM9] genau, du[EM9/D♯] bleibst[C♯m7] Friedefürst für[G♯m7] alle[AM9] Zeit
-Mit dir[F♯m7] geh' ich[EM9] auf den[EM9/D♯] Weg, den du[C♯m7] mir[G♯m7] bereitet[AM9] hast
-Geh' ich[F♯m7] durch das[EM9] tiefe[EM9/D♯] Tal, bin[C♯m7] ich sicher,[G♯m7] du bist[AM9] da
+[Bsus4/E][F♯m7][E][G♯m7/D♯]
+[C♯m7][G♯m7][AM9][F♯m7][E][B/D♯]
+[C♯m7][G♯m7][AM9]Du [F♯m7] bist [E] immer [B] treu und [E] du bist [G♯m7] immer [AM9] gut
+Und ich [F♯m7] weiß [EM9] genau, du [EM9/D♯] bleibst [C♯m7] Friedefürst für [G♯m7] alle [AM9] Zeit
+Mit dir [F♯m7] geh' ich [EM9] auf den [EM9/D♯] Weg, den du [C♯m7] mir [G♯m7] bereitet [AM9] hast
+Geh' ich [F♯m7] durch das [EM9] tiefe [EM9/D♯] Tal, bin [C♯m7] ich sicher,[G♯m7] du bist [AM9] da
 [C♯m7][C♯m]
-Alles, was gut und[H] vollkommen ist,[A]fließt von[C♯m] deinem Thron aus[H] ewig lebt
+Alles, was gut und [B] vollkommen ist,[A]fließt von [C♯m] deinem Thron aus [B] ewig lebt
 [A][C♯m]
-Deine Liebe[H] überwältigt mich, du bist[A] treu, für[C♯m] immer, immer[H] treu
+Deine Liebe [B] überwältigt mich, du bist [A] treu, für [C♯m] immer, immer [B] treu
 [A][C♯m]
-Alles, was gut und[H] vollkommen ist,[A]fließt von[C♯m] deinem Thron aus[H] ewig lebt
+Alles, was gut und [B] vollkommen ist,[A]fließt von [C♯m] deinem Thron aus [B] ewig lebt
 [A][C♯m]
-Deine Liebe[H] überwältigt mich, du bist[A] treu, für[C♯m] immer,[C♯m7] immer[H] treu
+Deine Liebe [B] überwältigt mich, du bist [A] treu, für [C♯m] immer,[C♯m7] immer [B] treu
 [AM9][C♯m7]
-[H][AM9][C♯m7]
-[H][G♯m7][AM9][C♯m7]
-[H][C♯m]Gefunden, errettet,[A] erlöst von den Ketten
-Der[E] Feind ist zertreten, ich bin[H] dein, oh ich bin dein
+[B][AM9][C♯m7]
+[B][G♯m7][AM9][C♯m7]
+[B][C♯m]Gefunden, errettet,[A] erlöst von den Ketten
+Der [E] Feind ist zertreten, ich bin [B] dein, oh ich bin dein
 [C♯m][E/G♯]
 [A][E]
-[H][C♯m]
-[A]Der[E] Feind ist zertreten, ich bin[H] dein, oh ich bin[A] dein
+[B][C♯m]
+[A]Der [E] Feind ist zertreten, ich bin [B] dein, oh ich bin [A] dein
 [C♯m7]
-Alles, was gut und[H] vollkommen ist,[A] fließt von[C♯m7] deinem Thron aus[H] ewig lebt
+Alles, was gut und [B] vollkommen ist,[A] fließt von [C♯m7] deinem Thron aus [B] ewig lebt
 [G♯m7][A][C♯m7]
-Deine Liebe[H] überwältigt mich, du bist[A] treu, für[C♯m7] immer, immer[H7] treu
+Deine Liebe [B] überwältigt mich, du bist [A] treu, für [C♯m7] immer, immer [B7] treu
 [E][EM9][A][C♯m]
-[H][G♯m7][A][C♯m]
-[H][G♯m7][A][C♯m]
-Deine Liebe[H] überwältigt mich, du[G♯m7] bist[A] treu,[C♯m] für immer, immer[H] treu
+[B][G♯m7][A][C♯m]
+[B][G♯m7][A][C♯m]
+Deine Liebe [B] überwältigt mich, du [G♯m7] bist [A] treu,[C♯m] für immer, immer [B] treu
 [G♯m7][AM9][C♯m]
-[H][AM9][C♯m]
-[H][F♯m][E][H/D♯]
+[B][AM9][C♯m]
+[B][F♯m][E][B/D♯]
 [C♯m][E/G♯][AM9][A][E]

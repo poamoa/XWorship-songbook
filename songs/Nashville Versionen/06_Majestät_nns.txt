@@ -1,0 +1,40 @@
+{title: Majestät}
+{key: 1}
+{tempo: 70}
+{time: 4/4}
+
+[1][4]
+[1][6][5]
+So [4] wie [1][5][6]Mose steige ich auf den Berg [4] Voller [1] Sehnsucht wartest du dort schon auf [5] mich
+Das was [6] hinter mir liegt zählt nicht [4] mehr Vor mir [1] liegt der Weg zu deinem [5] Angesicht
+[4][6]
+[1][5]
+Augen voll Flammen, Haar weiß wie Schnee Dein Blick so strahlend, wer kann besteh’[4] n[6][1][5]
+[4]Jeder Mensch wird [6] bekennen Du bist Gottes [1] Sohn
+Du sitzt auf dem [5] Thron Für die Ewigkeit
+[4]Für dich gibt’s keine [6] Grenzen Gott der [1] Nation
+Dir gilt das [5] Lob Für die Ewigkeit
+[4][6]
+[1][5]
+Wie [4] Maria gebe ich alles [6] hin Voller [1] Liebe nimmst du an, was ich dir [5] bring
+Ein [4] Moment mit dir macht alles still [6] Und die [1] ganze Welt verblasst, wenn ich dich [5] seh
+[4][4][6]
+Augen voll Flammen, Haar weiß wie Schnee [1] Dein Blick so [5] strahlend, wer kann besteh’ n
+[4][4][6]
+Rufst meinen Namen und ich bleib steh’ n[1] So reich an Gnade,[5]oh Majestät
+[4]Jeder Mensch wird [6] bekennen Du bist Gottes [1] Sohn
+Du sitzt auf dem [5] Thron Für die Ewigkeit
+[4]Für dich gibt’s keine [6] Grenzen Gott der [1] Nation
+Dir gilt das [5] Lob Für die Ewigkeit
+[4][6]
+[1][5]
+[4]Ich weiß, eines [4] Tages [6] werd’ ich dich seh’[1] n Im Glanz deiner Schönheit,[5] für die Ewigkeit
+[4][4][6]
+Ich weiß, eines Tages werd’ ich dich seh’[1] n Kein Schmerz, keine Trauer,[5]für die Ewigkeit
+[4]Jeder Mensch wird [6] bekennen Du bist Gottes [1] Sohn
+Du sitzt auf dem [5] Thron Für die Ewigkeit
+[4]Für dich gibt’s keine [6] Grenzen Gott der [1] Nation
+Dir gilt das [5] Lob Für die Ewigkeit
+[4][6]
+[1][5]
+[4]

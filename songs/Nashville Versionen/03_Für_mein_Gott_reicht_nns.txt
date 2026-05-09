@@ -1,0 +1,33 @@
+{title: Für mein Gott reicht}
+{key: 5}
+{tempo: 99}
+{time: 4/4}
+
+[1][6][4][1]
+[6][4][1]
+Welch ein Gott, der mit uns [6] weint [4] Obwohl [1]er schon längst das Entgegen
+In unserem Leid steht er uns [6] bei [4] Und was Tod war, wie [1] Lazarus beim Namen nennt
+Er ruft uns raus aus dem [6] Grab [4] Er hält das Septer über [1] Leben und Tod in seiner Hand
+Oh, nur er hat die [6] Macht [4] Unsere Sünden zu [1] vergeben, nur er hat es vollbracht
+Seine Größe ist [4] unendlich mächtig Und sein [6] Frieden [5] unverständlich herrlich
+Seine [1] Liebe [4] unvergänglich heilig Und [6] niemand kommt ihm [5] gleich
+Für mein Gott reicht [6] nur ein [4] Wort Und es weben [1] Erde und Himmel vom [5] Klang seiner Stimme
+Ja,[6] nur ein [4] Wort Wenn er will,[1] lässt er es regnen und [5] Neues entstehen
+Denn von [6] ihm, durch ihn,[4] zu ihm ist alles Ihm [1] sei Ehre [5] in Ewigkeit, Amen
+Ja,[6] nur ein [4] Gott Alles fügt [1] sich seinem Willen Für [5] ihn wollen wir singen
+[4][5][6]
+Ehre, Ehre, Ehre in der Höhe [1] Ehre,[5] Ehre, Ehre in der [4] Höhe [5][6]
+[1]All die [5] Ehre sei dem König auf dem [4] Froh Ehre,[5] Ehre,[6]Ehre in der Höhe
+[1]Ehre, Ehre,[5] Ehre in der Höhe [4] Ehre,[5][6]Ehre, Ehre in der [1] Höhe
+All die [2] Ehre sei dem König auf dem [6] Froh [2]
+[4][5][6][1][5]
+[4][5][6][6][1][5]
+Für mein Gott reicht [6] nur ein [4] Wort Und es weben [1] Erde und Himmel vom Klang [5] seiner Stimme
+Ja,[6] nur ein [4] Wort Wenn er will,[1] lässt er es regnen und [5] Neues entstehen
+Denn von [6] ihm, durch ihn,[4] zu ihm ist [5] alles [1] Ihm sei Ehre [5] in Ewigkeit, Amen
+Ja,[6] nur ein [4] Gott Alles fügt [1] sich seinem Willen Für [5] ihn wollen wir singen
+[4]Ehre,[5][6]Ehre, Ehre in der Höhe [1] Ehre,[5] Ehre, Ehre in der Höhe
+[4][5][6][1]All die [2] Ehre sei dem König auf dem Froh
+[4][6][4]
+[1][5][6][4]
+[1]
