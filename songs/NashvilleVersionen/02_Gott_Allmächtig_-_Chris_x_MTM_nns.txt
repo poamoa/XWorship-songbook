@@ -3,32 +3,58 @@
 {tempo: 72}
 {time: 4/4}
 
-[1]Text [2] ngl [6] Fade [1] Out
-[5][2]Hm... Musik [6]
-[1][5]Hm... Hm...[2] Sag mir, wer kann das Buch [6] öffnen
-Und uns [1] aus der Finsternis [5] retten Siehe [2] da, die durchbohrten [6] Hände
+{start_of_grid: Intro}
+| 2 . . . | 6 . . . | 1 . . . | 5 . . . |
+| 2 . . . | 6 . . . | 1 . . . | 5 . . . |
+{end_of_grid}
+
+{start_of_verse: Verse 1}
+[2]Sag mir, wer kann das Buch [6]öffnen
+Und uns [1]aus der Finsternis  re[5]tten Siehe [2] da, die durchbohrten [6] Hände
 Tragen aus [1] Liebe die Last von uns [1] Menschen [2] Heilig, heilig,[4]heilig ist der [6] Herr
 Der wahr und [1] ist und sein wird [2]Heilig,[4] heilig,[6] gottallmächtig
-[5]Hm... Ja, wir [4] fallen [5] auf die [6] Knie
-Vor dem [1] Eindesverdient [5]Weil er [4] so [5] vollkommen [6] liebt [6]
-Hat er für [1] uns den Tod [5] besiegt Ja, nur [4] er ist würdig, er sitzt [6] auf dem Thron
-[1]Jesus, unser König, er ist [5] Gottes Sohn Ja, wir [4] fallen [5] auf die [6] Knie
-Die ganze [1] Schöpfung singt für [5] ihn [4][2][2][4][4]
+[5]
+{end_of_verse}
+
+{start_of_prechorus: Pre-Chorus
+Ja, wir [4] fallen [5] auf die [6] Knie
+Vor dem [1] Ein der es verdient [5]Weil er [4] so [5] vollkommen [6] liebt [6]
+Hat er für [1] uns den Tod [5] besiegt 
+Ja, nur [4] er ist würdig, er sitzt [6] auf dem Thron
+[1]Jesus, unser König, er ist [5] Gottes Sohn 
+Ja, wir [4] fallen [5] auf die [6] Knie
+Die ganze [1] Schöpfung singt für [5] ihn 
+{end_of_prechorus}
+
+
+[4][2][2][4][4]
 [6][4][5][2][4][4]
-[6][4][5][2]Heilig,[2]heilig,[4]heilig ist [5] der [6] Herr, der [4] wahr und [5] ist und sein wird
+[6][4][5]
+
+[2]Heilig,[2]heilig,[4]heilig ist [5] der [6] Herr, der 
+[4] war und [5] ist und sein wird
 [2]Heilig,[4] heilig, Gott allmächtig
-[6]Ja, nur er sitzt auf dem [5] Thron [5][2]Heilig,[4] heilig, heilig [4] ist [6] der Herr, der wahr und [5] ist und sein wird
+[6]Ja, nur er sitzt auf dem [5] Thron [5]
+[2]Heilig,[4] heilig, heilig [4] ist [6] der Herr, der war und [5] ist und sein wird
 [2]Heilig,[4] heilig,[4] Gott allmächtig
-[6]Ja,[6] nur er sitzt auf dem [5] Thron Ja, wir [4] fallen [5] auf die [6] Knie [6]
-Vor dem [1] All des [5] Verdienst Der Herr,[4] der so [5] vollkommen [6] liebt
-Hat für [1] uns den Tod [5] besiegt Ja, nur [4] er ist [4] würdig, er sitzt [6] auf dem Thron
-Jesus,[1] unser König, er ist [5] Gottes Sohn Ja, wir [4] fallen [5] auf die [6] Knie [6]
+[6]Ja,nur er sitzt auf dem [5] Thron 
+
+
+Ja, wir [4] fallen [5] auf die [6] Knie [6]
+Vor dem [1] ein der es [5] verdient Der Herr,[4] der so [5] vollkommen [6] liebt
+Hat für [1] uns den Tod [5] besiegt 
+Ja, nur [4] er ist [4] würdig, er sitzt [6] auf dem Thron
+Jesus,[1] unser König, er ist [5] Gottes Sohn 
+Ja, wir [4]fallen [5]auf die [6]Knie [6]
 Die ganze [1] Schöpfung singt für [5] ihn [4][5][6]
+
+
 Die ganze Schöpfung [2] singt für ihn Sag mir, wer kann das Buch [6] öffnen Und uns [1] aus der Finsternis [5] retten
 Siehe [2] da, die durchbohrten [6] Hände Tragen aus [1] Liebe die Last von uns [5] Menschen
 [2]Heilig, heilig,[4]heilig [4] ist der [6] Herr, der wahr und [5] ist und sein wird
 [2]Heilig,[4] heilig, Gott [5] allmächtig
-[5]Ja, wir [4] fallen [5] auf die [1] Knie Vor dem [4] All [5] des [1] Verdienst
+[5]Ja, wir [4] fallen [5] auf die [1]Knie 
+Vor dem [4]Einn der [5] es [1] Verdienst
 Weil er [4] so [5] vollkommen [6] liebt Hat er für [2] uns den [5] Tod besiegt
-[1]Ja, nur [4] er ist [5] würdig, er [3] sitzt auf dem [6] Thron Jesus,[4] unser [5] König, er [3] ist Gottes Sohn
+[1]Ja, nur [4]er ist [5]würdig, er [3] sitzt auf dem [6]Thron Jesus, [4]unser [5] König, er [3] ist Gottes Sohn
 [6]
