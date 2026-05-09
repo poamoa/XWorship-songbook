@@ -7,102 +7,101 @@
     <style>
         :root {
             --primary-color: #2563eb;
-            --bg-color: #f8fafc;
+            --bg-color: #f1f5f9;
             --card-bg: #ffffff;
-            --text-color: #1e293b;
-            --chord-color: #2563eb;
+            --text-color: #0f172a;
+            --chord-color: #1d4ed8;
             --label-color: #64748b;
+            --accent-bridge: #7c3aed;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            padding: 40px 20px;
         }
 
         .song-container {
-            max-width: 800px;
-            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
             background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         header {
             text-align: center;
             margin-bottom: 40px;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
             padding-bottom: 20px;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: var(--text-color);
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--label-color);
-            font-weight: 300;
-        }
+        h1 { margin: 0; font-size: 2.2rem; font-weight: 800; }
+        .subtitle { font-size: 1.1rem; color: var(--label-color); margin-top: 5px; }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             padding: 20px;
-            border-left: 4px solid #cbd5e1;
-            background: #fafafa;
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px;
+            position: relative;
         }
 
-        .section.chorus { border-left-color: var(--primary-color); background: #eff6ff; }
-        .section.bridge { border-left-color: #8b5cf6; background: #f5f3ff; }
+        .section::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 10px; bottom: 10px;
+            width: 4px;
+            border-radius: 2px;
+            background: #cbd5e1;
+        }
+
+        .section.chorus { background: #eff6ff; }
+        .section.chorus::before { background: var(--primary-color); }
+        
+        .section.bridge { background: #f5f3ff; }
+        .section.bridge::before { background: var(--accent-bridge); }
 
         .label {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            color: var(--label-color);
-            margin-bottom: 15px;
             display: block;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: var(--label-color);
+            margin-bottom: 20px;
         }
 
         .line {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .word-group {
             display: flex;
             flex-direction: column;
-            margin-right: 12px;
-            min-height: 3rem;
+            margin-right: 14px;
+            min-height: 2.8rem;
         }
 
         .chord {
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-weight: bold;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-weight: 700;
             color: var(--chord-color);
-            font-size: 1.1rem;
-            height: 1.4rem;
+            font-size: 1.05rem;
+            margin-bottom: 2px;
         }
 
-        .lyric {
-            font-size: 1.1rem;
-        }
+        .lyric { font-size: 1.1rem; white-space: nowrap; }
 
         @media print {
-            body { background: white; padding: 0; }
-            .song-container { box-shadow: none; border: none; width: 100%; }
-            .section { break-inside: avoid; }
+            body { padding: 0; background: white; }
+            .song-container { box-shadow: none; border: none; padding: 20px; }
+            .section { page-break-inside: avoid; }
         }
     </style>
 </head>
@@ -137,6 +136,31 @@
             <div class="word-group"><span class="chord">1/3</span><span class="lyric">fürst für</span></div>
             <div class="word-group"><span class="chord">4</span><span class="lyric">alle Zeit</span></div>
         </div>
+        <div class="line" style="margin-top:15px;">
+            <div class="word-group"><span class="chord"></span><span class="lyric">Mit dir</span></div>
+            <div class="word-group"><span class="chord">2</span><span class="lyric">geh' ich</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">auf den</span></div>
+            <div class="word-group"><span class="chord">5/7</span><span class="lyric">Weg,</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord"></span><span class="lyric">Den Du</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">mir be-</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">reitet</span></div>
+            <div class="word-group"><span class="chord">4</span><span class="lyric">hast</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord"></span><span class="lyric">Geh' ich</span></div>
+            <div class="word-group"><span class="chord">2</span><span class="lyric">durch das</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">tiefe</span></div>
+            <div class="word-group"><span class="chord">5/7</span><span class="lyric">Tal,</span></div>
+        </div>
+        <div class="line">
+            <div class="word-group"><span class="chord"></span><span class="lyric">Bin ich</span></div>
+            <div class="word-group"><span class="chord">1</span><span class="lyric">sicher,</span></div>
+            <div class="word-group"><span class="chord">1/3</span><span class="lyric">Du bist</span></div>
+            <div class="word-group"><span class="chord">4</span><span class="lyric">da</span></div>
+            <div class="word-group"><span class="chord">5sus46</span><span class="lyric"></span></div>
+        </div>
     </div>
 
     <div class="section chorus">
@@ -159,19 +183,31 @@
         <div class="line">
             <div class="word-group"><span class="chord">4</span><span class="lyric">Du bist</span></div>
             <div class="word-group"><span class="chord">6</span><span class="lyric">treu, für</span></div>
-            <div class="word-group"><span class="chord">5</span><span class="lyric">immer treu</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">immer, immer treu</span></div>
         </div>
     </div>
 
     <div class="section bridge">
-        <span class="label">Bridge</span>
+        <span class="label">Bridge (x4)</span>
         <div class="line">
             <div class="word-group"><span class="chord">6</span><span class="lyric">Gefunden, errettet,</span></div>
             <div class="word-group"><span class="chord">4</span><span class="lyric">erlöst von den Ketten</span></div>
         </div>
         <div class="line">
             <div class="word-group"><span class="chord">1</span><span class="lyric">Der Feind ist zertreten,</span></div>
-            <div class="word-group"><span class="chord">5</span><span class="lyric">ich bin dein</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">ich bin dein, oh ich bin dein</span></div>
+        </div>
+        <div class="line" style="margin-top:10px; opacity: 0.7;">
+            <span class="lyric"><i>(Wiederholung laut Originaltext...)</i></span>
+        </div>
+    </div>
+
+    <div class="section chorus">
+        <span class="label">Chorus / Outro</span>
+        <div class="line">
+            <div class="word-group"><span class="chord">4</span><span class="lyric">Du bist</span></div>
+            <div class="word-group"><span class="chord">1/3</span><span class="lyric">treu, für</span></div>
+            <div class="word-group"><span class="chord">5</span><span class="lyric">immer, immer treu</span></div>
         </div>
     </div>
 </div>
